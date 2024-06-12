@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-container{
+    background-color: #f5bf42;
+    margin-bottom: 3rem;
+}
+.nav-bar {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar h1 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.nav-content {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(162, 161, 161);
+}
+
+
+li:hover {
+    color: white;
+}
+
+.user {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cart {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.contact-content{    
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    border: 1px solid black;
+    background-color:rgba(240, 248, 255, 0.701);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.form h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.form p{
+    margin-bottom: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form input{
+    width: 70%;
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 1.1rem;
+    background-color: #EBEBEB;
+    border: none;
+    border-radius: 0.1rem;
+}
+.form button{
+    padding: 0.5rem 1.4rem;
+    width: max-content;
+    border: none;
+    border-radius: 0.1rem;
+    margin-top: 1rem;
+}
+
+.form-img img{
+   width: 500px;
+   border-radius: 1rem;
+}
+
+
+
+
+
+
+.footer {
+    height: 800px;
+}
+
+.footer1-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+
+.newsletter-title {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-title h4 {
+    font-size: 1.1rem;
+    color: #6a6a6a;
+    font-weight: normal;
+}
+
+.newsletter-input {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.newsletter-input input {
+    padding: 0.94rem 2.8rem;
+    padding-left: 1rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+}
+
+.newsletter-input ::placeholder {
+    text-align: start;
+    font-size: 0.895rem;
+    color: #6a6a6a;
+}
+
+.newsletter-input i {
+    background-color: #3B5D50;
+    border-radius: 0.5rem;
+    padding: 0.94rem 1.8rem;
+    color: white;
+}
+
+.newsletter-img img {
+    width: 350px;
+}
+
+
+.footer2-content {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.about-furni {
+    display: flex;
+    justify-content: space-between;
+}
+
+.furni-info {
+    width: 35%;
+}
+
+.furni-info h2 {
+    font-size: 1.925rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+    color: #2f2F2F;
+}
+
+.furni-info p {
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    margin-bottom: 1rem;
+}
+
+.furni-info i {
+    background-color: #eff2f1;
+    padding: 0.8rem 0.9rem;
+    color: #6a6a6a;
+    border-radius: 4rem;
+    margin-left: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+
+.furni-flex {
+    display: flex;
+    gap: 6rem;
+    padding-top: 4rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    font-size: 0.91rem;
+    color: #6a6a6a;
+}
+
+
+
+.footer3-content {
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+}
+
+.copyright p {
+    width: 90%;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+    color: #6a6a6a;
+}
+
+.term-conditions {
+    display: flex;
+    gap: 1rem;
+}
+
+.term-conditions span {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+   
+    .nav-bar {
+        padding: 1rem 2rem;
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .nav-content {
+        display: none;
+    }
+
+
+    .nav-bar h1 {
+        font-size: 2rem;
+        color:black;
+    }
+
+    #menu {
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form{
+        width: 90%;
+    }
+   
+
+    footer {
+        height: 1000px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer1-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .newsletter-title img {
+        width: 2rem;
+    }
+
+    .newsletter-input {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-furni {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .furni-info {
+        width: 100%;
+    }
+
+    .furni-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:767px) {
+    .nav-bar {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar h1 {
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .nav-content {
+        display: flex;
+        color: black;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li a {
+        margin: 0 0.5rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    li:hover {
+        color: white;
+    }
+
+    .user {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .cart {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form{
+        width: 70%;
+    }
+    .form input{
+        width: 60%;
+    }
+    
+
+
+
+
+
+
+    
+    footer {
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer1-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .newsletter-title img {
+        width: 2rem;
+    }
+
+    .newsletter-input {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-furni {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .furni-info {
+        width: 100%;
+    }
+
+    .furni-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+}

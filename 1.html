@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonial Slider</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .testimonial-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial {
+    display: none;
+    text-align: center;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .testimonial-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  .testimonial p {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .testimonial-author {
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: #ddd;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="testimonial-container">
+  <div class="testimonial active">
+    <img src="./images/dog1.webp" alt="Testimonial 1" class="testimonial-img">
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+    <p class="testimonial-author">- John Doe</p>
+  </div>
+  <div class="testimonial">
+    <img src="./images/dog2.webp" alt="Testimonial 2" class="testimonial-img">
+    <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+    <p class="testimonial-author">- Jane Smith</p>
+  </div>
+  <div class="testimonial">
+    <img src="./images/dog3.webp" alt="Testimonial 3" class="testimonial-img">
+    <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+    <p class="testimonial-author">- James Brown</p>
+  </div>
+
+  <a class="prev" onclick="changeTestimonial(-1)">&#10094;</a>
+  <a class="next" onclick="changeTestimonial(1)">&#10095;</a>
+</div>
+
+<script>
+  let slideIndex = 0;
+  showTestimonial(slideIndex);
+
+  function changeTestimonial(n) {
+    showTestimonial(slideIndex += n);
+  }
+
+  function showTestimonial(n) {
+    const testimonials = document.getElementsByClassName("testimonial");
+    if (n >= testimonials.length) {
+      slideIndex = 0;
+    }
+    if (n < 0) {
+      slideIndex = testimonials.length - 1;
+    }
+    for (let i = 0; i < testimonials.length; i++) {
+      testimonials[i].style.display = "none";
+    }
+    testimonials[slideIndex].style.display = "block";
+  }
+</script>
+
+</body>
+</html>
